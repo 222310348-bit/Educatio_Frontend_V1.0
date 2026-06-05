@@ -1,9 +1,9 @@
 import { useEffect, useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../context/AuthContext';
-import claseService from '../services/claseService';
-import NuevaClase from '../components/NuevaClase';
-import ModalUnirseClase from '../components/ModalUnirseClase';
+import { AuthContext } from 'src/context/AuthContext.js';
+import claseService from 'src/services/claseService.js';
+import NuevaClase from 'src/Components/NuevaClase.jsx';
+import ModalUnirseClase from 'src/Components/ModalUnirseClase.jsx';
 
 const Dashboard = () => {
     const [clases, setClases] = useState([]);
