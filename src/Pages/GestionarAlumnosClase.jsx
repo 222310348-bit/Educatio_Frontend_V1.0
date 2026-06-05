@@ -1,8 +1,8 @@
 import { useEffect, useState, useContext } from 'react';
 import { useParams, useLocation, useNavigate } from 'react-router-dom';
-import { AuthContext } from '../context/AuthContext';
-import claseService from '../services/claseService';
-import ModalAgregarAlumno from '../components/ModalAgregarAlumno';
+import { AuthContext } from 'src/context/AuthContext.<i class="fas fa-node-js    "></i>';
+import claseService from 'src/services/claseService.js';
+import ModalAgregarAlumno from 'src/Components/ModalAgregarAlumno.jsx';
 
 const GestionarAlumnosClase = () => {
     const { codigo } = useParams();
