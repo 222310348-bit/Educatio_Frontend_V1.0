@@ -29,12 +29,11 @@ const ConversacionesDirectas = () => {
     }, []);
 
     const abrirChat = (conv) => {
-        // Mantenemos tu ruta original para que no rompa el AppRouter
         navigate(`/conversacion/${conv._id}`, { state: { conversacion: conv } });
     };
 
     const crearConversacionPorCorreo = async (e) => {
-        if (e) e.preventDefault(); // Evita recargas si se usa dentro de formularios
+        if (e) e.preventDefault(); 
         setCreacionError(null);
         setCreacionExitosa(null);
 
@@ -63,7 +62,7 @@ const ConversacionesDirectas = () => {
     return (
         <div className="container py-4" style={{ maxWidth: '800px', minHeight: '85vh' }}>
             
-            {/* Título e Input Superior Estilizado */}
+            {/* Título */}
             <div className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4 gap-3">
                 <div>
                     <h2 className="fw-bold text-dark mb-0" style={{ letterSpacing: '-0.5px' }}>Mensajes Directos</h2>
@@ -93,9 +92,8 @@ const ConversacionesDirectas = () => {
                 {creacionExitosa && <div className="alert alert-success py-2 px-3 small rounded-pill mt-3 mb-0 shadow-sm">{creacionExitosa}</div>}
             </div>
 
-            {/* Listado de Chats con Diseño Premium */}
+            {/* Listado de Chats */}
             {loading ? (
-                // Animación de Placeholder / Esqueleto de carga limpio
                 [1, 2, 3].map((i) => (
                     <div key={i} className="card mb-3 border-0 shadow-sm p-3 placeholder-glow" style={{ borderRadius: '12px' }}>
                         <div className="d-flex align-items-center">
@@ -135,7 +133,6 @@ const ConversacionesDirectas = () => {
                                     onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
                                 >
                                     <div className="d-flex align-items-center">
-                                        {/* Avatar Circular con iniciales */}
                                         <div 
                                             className="rounded-circle text-white d-flex align-items-center justify-content-center me-3 shadow-sm fw-bold" 
                                             style={{ 
@@ -148,7 +145,6 @@ const ConversacionesDirectas = () => {
                                             {nombreConversacion.charAt(0).toUpperCase()}
                                         </div>
 
-                                        {/* Cuerpo informativo */}
                                         <div className="flex-grow-1 overflow-hidden">
                                             <div className="d-flex justify-content-between align-items-center mb-1">
                                                 <h6 className="mb-0 fw-bold text-dark text-truncate pe-2" style={{ fontSize: '0.98rem' }}>
