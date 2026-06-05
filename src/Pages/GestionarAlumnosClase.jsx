@@ -1,6 +1,6 @@
 import { useEffect, useState, useContext } from 'react';
 import { useParams, useLocation, useNavigate } from 'react-router-dom';
-import { AuthContext } from 'src/context/AuthContext.<i class="fas fa-node-js    "></i>';
+import { AuthContext } from 'src/context/AuthContext.js';
 import claseService from 'src/services/claseService.js';
 import ModalAgregarAlumno from 'src/Components/ModalAgregarAlumno.jsx';
 
