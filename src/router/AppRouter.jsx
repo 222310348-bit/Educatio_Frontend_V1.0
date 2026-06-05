@@ -1,20 +1,20 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Login from 'src/pages/Login';
-import Dashboard from 'src/pages/Dashboard';
-import RestablecerContrasenia from 'src/pages/RestablecerContrasena';
-import ProtectedRoute from 'src/components/ProtectedRoute'; // Importamos el guardia
-import MainLayout from 'src/components/MainLayout'; // Importamos el Layout
-import Usuarios from 'src/pages/Usuarios';
-import GestionClases from 'src/pages/GestionClases';
-import ConversacionesClase from 'src/pages/ConversacionesClase';
-import ConversacionesDirectas from 'src/pages/ConversacionesDirectas';
-import ChatDirecta from 'src/pages/ChatDirecta';
-import AsistenciasClase from 'src/pages/AsistenciasClase';
-import AsistenciasTodasClases from 'src/pages/AsistenciasTodasClases';
-import VisualizarAsistenciasAlumnos from 'src/pages/VisualizarAsistenciasAlumnos';
-import GestionarAlumnosClase from 'src/pages/GestionarAlumnosClase';
-import CambiarContrasenia from 'src/pages/CambiarContrasenia';
-import Registro from 'src/pages/Registro';
+import Login from 'src/pages/Login.jsx';
+import Dashboard from 'src/pages/Dashboard.jsx';
+import RestablecerContrasenia from 'src/pages/RestablecerContrasena.jsx';
+import ProtectedRoute from 'src/components/ProtectedRoute.jsx'; // Importamos el guardia
+import MainLayout from 'src/components/MainLayout.jsx'; // Importamos el Layout
+import Usuarios from 'src/pages/Usuarios.jsx';
+import GestionClases from 'src/pages/GestionClases.jsx';
+import ConversacionesClase from 'src/pages/ConversacionesClase.jsx';
+import ConversacionesDirectas from 'src/pages/ConversacionesDirectas.jsx';
+import ChatDirecta from 'src/pages/ChatDirecta.jsx';
+import AsistenciasClase from 'src/pages/AsistenciasClase.jsx';
+import AsistenciasTodasClases from 'src/pages/AsistenciasTodasClases.jsx';
+import VisualizarAsistenciasAlumnos from 'src/pages/VisualizarAsistenciasAlumnos.jsx';
+import GestionarAlumnosClase from 'src/pages/GestionarAlumnosClase.jsx';
+import CambiarContrasenia from 'src/pages/CambiarContrasenia.jsx';
+import Registro from 'src/pages/Registro.jsx';
 
 const AppRouter = () => {
     return (
