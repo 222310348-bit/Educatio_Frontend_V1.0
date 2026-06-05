@@ -1,20 +1,20 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Login from 'src/pages/Login';
-import Dashboard from 'src/pages/Dashboard';
-import RestablecerContrasenia from 'src/pages/RestablecerContrasena';
-import ProtectedRoute from 'src/components/ProtectedRoute'; // Importamos el guardia
-import MainLayout from 'src/components/MainLayout'; // Importamos el Layout
-import Usuarios from 'src/pages/Usuarios';
-import GestionClases from 'src/pages/GestionClases';
-import ConversacionesClase from 'src/pages/ConversacionesClase';
-import ConversacionesDirectas from 'src/pages/ConversacionesDirectas';
-import ChatDirecta from 'src/pages/ChatDirecta';
-import AsistenciasClase from 'src/pages/AsistenciasClase';
-import AsistenciasTodasClases from 'src/pages/AsistenciasTodasClases';
-import VisualizarAsistenciasAlumnos from 'src/pages/VisualizarAsistenciasAlumnos';
-import GestionarAlumnosClase from 'src/pages/GestionarAlumnosClase';
-import CambiarContrasenia from 'src/pages/CambiarContrasenia';
-import Registro from 'src/pages/Registro';
+import Login from '../pages/Login';
+import Dashboard from '../pages/Dashboard';
+import RestablecerContrasenia from '../pages/RestablecerContrasena';
+import ProtectedRoute from '../components/ProtectedRoute'; // Importamos el guardia
+import MainLayout from '../components/MainLayout'; // Importamos el Layout
+import Usuarios from '../pages/Usuarios';
+import GestionClases from '../pages/GestionClases';
+import ConversacionesClase from '../pages/ConversacionesClase';
+import ConversacionesDirectas from '../pages/ConversacionesDirectas';
+import ChatDirecta from '../pages/ChatDirecta';
+import AsistenciasClase from '../pages/AsistenciasClase';
+import AsistenciasTodasClases from '../pages/AsistenciasTodasClases';
+import VisualizarAsistenciasAlumnos from '../pages/VisualizarAsistenciasAlumnos';
+import GestionarAlumnosClase from '../pages/GestionarAlumnosClase';
+import CambiarContrasenia from '../pages/CambiarContrasenia';
+import Registro from '../pages/Registro';
 
 const AppRouter = () => {
     return (
